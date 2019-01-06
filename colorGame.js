@@ -29,7 +29,7 @@ function resetBtnListeners() {
 function squareBtnListeners() {
 	for (var i = squares.length - 1; i >= 0; i--) {
 		squares[i].addEventListener("click", function () {
-			var clickedColor = this.style.background-color;
+			var clickedColor = this.style.background;
 			if (clickedColor === pickedColor) {
 				changeColor(clickedColor);
 				h1.style.background = clickedColor;
@@ -63,7 +63,7 @@ function reset() {
 	for (var i = squares.length - 1; i >= 0; i--) {
 		if(colors[i]){
 			squares[i].style.display = "block";
-			squares[i].style.background-color = colors[i];
+			squares[i].style.background = colors[i];
 		} else {
 			squares[i].style.display = "none";
 		}
